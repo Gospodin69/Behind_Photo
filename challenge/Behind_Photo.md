@@ -2,11 +2,11 @@
 
 
 
-<img src="assets/images/htb.png" style="margin-left: 20px; zoom: 60%;" align=left />    	<font size="10">Challenge Name</font>
+<img src="assets/images/htb.png" style="margin-left: 20px; zoom: 60%;" align=left />    	<font size="10">Behind Photo</font>
 
 ​		DD<sup>th</sup> Month YYYY
 
-​		Challenge Author(s): 
+​		Challenge Author(s): gospodin69
 
 ​		
 
@@ -32,12 +32,21 @@ Decode correct for password
 
 
 # Challenge
+One day at my cyber security company, an employee downloads a zip file with a photo and unknown text, and we don't know what to do. Can you help us ?
 
 
 
 # Solver
 
-```python
+```import base64
+import sys
+import hashlib
+
+with open("password.txt", "rb") as txt:
+        decode_string = base64.b64decode(txt.read())
+print (decode_string)
+
+##Exported hash decode manualy with online tool
 
 ```
 
